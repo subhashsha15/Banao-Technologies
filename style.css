@@ -1,0 +1,467 @@
+.navbar-height {
+    height: 72px;
+    width: 100%;
+    background: #FFF;
+    box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.12);
+}
+
+.logo-img {
+    width: 162.566px;
+    height: 24px;
+    flex-shrink: 0;
+}
+
+.search {
+    width: 360px;
+    height: 42px;
+    flex-shrink: 0;
+}
+
+.search-input {
+    border-radius: 21px;
+    background: #F2F2F2;
+    border-left: none;
+    color: #5C5C5C;
+    font-family: IBM Plex Sans;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.form-control:focus {
+    color: #212529;
+    border-color: #ced4da;
+    outline: 0 !important;
+    background: #F2F2F2;
+    box-shadow: none !important;
+}
+
+.dropdown,
+.dropend,
+.dropstart,
+.dropup {
+    display: flex;
+    align-items: center;
+    color: #2E2E2E;
+    font-family: IBM Plex Sans;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.navbar-img {
+    height: 100%;
+    width: 100%;
+}
+
+.leave-btn {
+    position: absolute;
+    right: 18px;
+    top: 14px;
+    width: 110px;
+    height: 28px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #FFF !important;
+    font-family: IBM Plex Sans;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    border-radius: 4px;
+    border: 0.8px solid #FFF !important;
+    padding: 2px 8px !important;
+}
+
+/* modal css-create account modal */
+
+.btn-close {
+    position: absolute;
+    right: 0;
+    top: -32px;
+    width: 16px;
+    height: 16px;
+    background-color: #FFFFFF !important;
+    border-radius: 50%;
+    padding: 5px;
+}
+
+.modal-top-heading {
+    color: #008A45;
+    text-align: center;
+    font-family: IBM Plex Sans;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 16px;
+    border-radius: 8px 8px 0px 0px;
+    background: #EFFFF4;
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-header {
+    padding: 31px 30px;
+    border-bottom: none;
+}
+
+.modal-header p {
+    color: #3D3D3D;
+    text-align: right;
+    font-family: IBM Plex Sans;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.modal-header h5 {
+    color: #000;
+    font-family: IBM Plex Sans;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.modal-header p span {
+    color: #2F6CE5;
+}
+
+.modal-body {
+    display: flex;
+    /* justify-content: space-evenly; */
+    align-items: center;
+    gap: 50px;
+    padding: 0px 30px;
+}
+
+.modal-body-left-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.username {
+    display: flex;
+}
+
+.modal-body-left-container input {
+    width: 320px;
+    height: 46px;
+    flex-shrink: 0;
+    border-radius: 2px 2px 0px 0px;
+    border: 1px solid #D9D9DB;
+    background: #F7F8FA;
+    padding: 15px 0px;
+    padding-left: 12px;
+    color: #8A8A8A;
+    font-family: IBM Plex Sans;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 16px;
+    outline: none;
+}
+
+.username input {
+    width: 160px;
+    height: 46px;
+}
+
+.modal-body-left-container button {
+    width: 320px;
+    height: 38px;
+    flex-shrink: 0;
+    border-radius: 2px;
+    border: 0.6px solid #D9D9DB;
+    background: #FFF;
+}
+
+.create-btn {
+    border-radius: 20px !important;
+    background: #2F6CE5 !important;
+    margin-top: 20px;
+    margin-bottom: 25px;
+}
+
+.facebook-btn,
+.google-btn {
+    margin-bottom: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.modal-body-right-container p {
+    color: #000;
+    text-align: right;
+    font-family: IBM Plex Sans;
+    font-size: 11px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 16px;
+    /* 145.455% */
+    opacity: 0.6;
+    letter-spacing: -0.088px;
+}
+
+/* Main Content CSS */
+.body {
+    background: #FFF;
+}
+
+.main-content-container {
+    margin: 0px auto;
+    max-width: 1040px;
+    margin-top: 32px;
+}
+
+.content-heading {
+    border-bottom: 1px solid #E0E0E0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 18px;
+    margin-bottom: 28px;
+}
+
+.content-heading-lists span {
+    margin-right: 21px;
+    color: #8A8A8A;
+    font-family: IBM Plex Sans;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+}
+
+.content-heading-lists span:nth-child(1) {
+    color: #000;
+    text-decoration: underline;
+    text-underline-offset: 29px;
+}
+
+.content-heading-buttons {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 7px;
+}
+
+button {
+    border: none;
+    border-radius: 4px;
+}
+
+.button {
+    padding: 7px 6px;
+    width: 133px;
+    height: 36px;
+    background: #EDEEF0;
+    color: #000;
+    font-family: IBM Plex Sans;
+    font-size: 15px;
+    font-weight: 500;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+
+.btn-2,
+.btn-2 button {
+    background-color: #2F6CE5;
+    color: #FFF;
+    border-radius: 4px;
+}
+
+.btn-2 img {
+    width: 22px;
+    height: 22px;
+}
+
+.content-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.content-right-container {
+    width: 243px;
+}
+
+.content-right-container-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 0.4px solid #B8B8B8;
+    padding-bottom: 10px;
+}
+
+.location span {
+    color: #000;
+    font-family: IBM Plex Sans;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+}
+
+.content-right-container-para {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    margin-top: 32px;
+    gap: 6px;
+}
+
+.content-right-container-para p {
+    color: #000;
+    font-family: IBM Plex Sans;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    opacity: 0.5;
+}
+
+/* Posts CSS */
+.card {
+    width: 100%;
+    /* height: 472px; */
+    border-radius: 4px;
+    border: 1px solid #E0E0E0;
+    background: #FFF;
+}
+
+/* .card-img-top {
+    max-width: 100%;
+    height: auto;
+} */
+
+.card-title {
+    color: #000;
+    font-family: IBM Plex Sans;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+}
+
+.para {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.para p {
+    color: #000;
+    font-family: IBM Plex Sans;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 600;
+    max-width: 500px;
+    line-height: 134.167%;
+}
+
+.para-2 {
+    color: #5C5C5C;
+    font-family: IBM Plex Sans;
+    font-size: 19px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 134.167%;
+}
+
+.profile-details {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.profile-image span {
+    color: #000;
+    font-family: IBM Plex Sans;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+}
+
+#profile-image-views {
+    color: #343A40;
+    font-size: 12px;
+}
+.profile-image div{
+    display: flex;
+    flex-direction: column;
+
+}
+.profile-views {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 40px;
+}
+
+.views,
+.profile-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 6px;
+}
+
+.views img {
+    margin-top: 2px;
+}
+
+.share-btn {
+    width: 42px;
+    height: 36px;
+    border-radius: 2px;
+    background: #EDEEF0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.share-btn img {
+    width: 18px;
+    height: 18px;
+}
+
+.meeting-details {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 40px;
+    margin-bottom: 16px;
+}
+
+.meeting-time,
+.meeting-location {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-body button {
+    width: 100%;
+    height: 38px;
+    flex-shrink: 0;
+    border-radius: 8px;
+    border: 0.7px solid #A9AEB8;
+    background: #FFF;
+    color: #E56135;
+    font-family: IBM Plex Sans;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+    margin-bottom: 32px;
+}
+
+.lastpost-btn {
+    color: #02B875 !important;
+}

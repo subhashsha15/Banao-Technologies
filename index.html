@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans&family=Lexend+Deca&display=swap"
+        rel="stylesheet">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <title>Banao Technologies</title>
+</head>
+
+<body>
+    <!-- NavBar Codes Start -->
+    <div class="d-flex d-none d-lg-flex justify-content-around align-items-center navbar-height">
+        <div>
+            <a class="navbar-brand" href="#">
+                <img src="public/logo.jpg" class="logo-img" alt="" />
+            </a>
+        </div>
+        <div>
+            <nav class="navbar navbar-light">
+                <div class="input-group search">
+                    <span class="input-group-text search-input" id="basic-addon1">
+                        <img src="public/search-icon.svg" alt="" />
+                    </span>
+                    <input type="text" class="form-control search-input"
+                        placeholder="Search for your favorite groups in ATG" aria-label="Username"
+                        aria-describedby="basic-addon1" />
+                </div>
+            </nav>
+        </div>
+        <div>
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item dropdown">
+                    <span>
+                        Create account.
+                    </span>
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                        data-bs-toggle="dropdown" aria-expanded="false">
+                        It’s free!
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <li>
+                            <button type="button" class="btn" data-bs-toggle="modal"
+                                data-bs-target="#createAccountModal">
+                                Create Account
+                            </button>
+                        </li>
+                        <li>
+                            <hr class="dropdown-divider" />
+                        </li>
+                        <li>
+                            <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#logInModal">
+                                Log In
+                            </button>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="d-lg-none">
+        <button type="button" class="btn leave-btn">Join group</button>
+    </div>
+    <img src="public/image1.png" class="navbar-img" alt="" />
+    <!-- NavBar Codes End -->
+    <!-- CreateAccount Modal code Start-->
+    <div class="modal fade " id="createAccountModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content">
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                <div class="modal-top-heading d-none d-lg-flex">
+                    Let's learn, share & inspire each other with our passion for computer engineering. Sign up now 🤘🏼
+                </div>
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Create Account</h5>
+                    <p class="mt-4 mt-md-4">Already have an account? <span>Sign In</span></p>
+                </div>
+                <div class="modal-body container">
+                    <div class="row d-flex justify-content-around">
+                        <div class="modal-body-left-container col-12 col-lg-6">
+                            <div class="username">
+                                <input type="text" placeholder="First Name" />
+                                <input type="text" placeholder="Last Name" />
+                            </div>
+                            <input type="email" placeholder="Email" />
+                            <input type="password" placeholder="Password" />
+                            <input type="password" placeholder="Confirm Password" />
+                            <button class="create-btn">Create Account</button>
+                            <button class="facebook-btn">
+                                <img src="public/facebook-icon.png" alt="" />
+                                <span>Sign up with Facebook</span>
+                            </button>
+                            <button class="google-btn">
+                                <img src="public/google-icon.png" alt="" />
+                                <span>Sign up with Google</span>
+                            </button>
+                            <!-- <p>Forgot Password?</p> -->
+                        </div>
+                        <div class="modal-body-right-container col-lg-3 d-flex flex-column align-items-center">
+                            <img class="d-none d-lg-inline pr-1" src="public/signup-image.png" alt="" />
+                            <p class="text-center ml-8 col-12">By signing up, you agree to our Terms & conditions,
+                                Privacy
+                                policy</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- CreateAccount Modal code End-->
+    <!-- Login Modal code Start-->
+    <div class="modal fade " id="logInModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content">
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                <div class="modal-top-heading d-none d-lg-flex">
+                    Let's learn, share & inspire each other with our passion for computer engineering. Sign up now 🤘🏼
+                </div>
+                <div class="modal-header">
+                    <h5 class="modal-title d-none d-lg-block" id="exampleModalLabel">Sign In</h5>
+                    <h5 class="modal-title d-block d-lg-none" id="exampleModalLabel">Welcome back!</h5>
+                    <p class="mt-4 mt-md-4">Don't have an account yet? <span>Create new for free!</span></p>
+                </div>
+                <div class="modal-body d-flex align-items-center mx-auto">
+                    <div class="modal-body-left-container">
+                        <input type="email" placeholder="Email" />
+                        <input type="password" placeholder="Password" />
+                        <button class="create-btn">Sign In</button>
+                        <button class="facebook-btn">
+                            <img src="public/facebook-icon.png" alt="" />
+                            <span>Sign up with Facebook</span>
+                        </button>
+                        <button class="google-btn">
+                            <img src="public/google-icon.png" alt="" />
+                            <span>Sign up with Google</span>
+                        </button>
+                        <p>Forgot Password?</p>
+                    </div>
+                    <div class="modal-body-right-container">
+                        <img class="d-none d-lg-flex" src="public/signup-image.png" alt="" />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Login Modal code End-->
+    <!-- Body Content Start-->
+    <div class="main-content-body">
+        <div class="main-content-container">
+            <div class="content-heading px-lg-0 px-sm-5">
+                <div class="content-heading-lists d-none d-lg-flex ">
+                    <span>All Posts(32)</span>
+                    <span>Article</span>
+                    <span>Event</span>
+                    <span>Education</span>
+                    <span>Job</span>
+                </div>
+                <div class="content-heading-lists d-lg-none">
+                    <span>All Posts(32)</span>
+                </div>
+                <div class="content-heading-buttons d-none d-lg-flex">
+                    <div class="button btn-1">
+                        <button>write a Post</button>
+                        <img src="public/down-arrow.svg" alt="" />
+                    </div>
+                    <div class="button btn-2">
+                        <img src="public/group-icon.svg" alt="" />
+                        <button>Join Group</button>
+                    </div>
+                </div>
+                <div class="button btn-1 d-lg-none">
+                    <button>Filter: All</button>
+                    <img src="public/down-arrow.svg" alt="" />
+                </div>
+            </div>
+            <div class="content-container px-lg-0 px-sm-5 px-xs-5 px-md-5">
+                <div class="content-left-container">
+                    <!-- Posts Start-->
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="card mb-3">
+                                <img src="public/post-image1.png" class="card-img-top" alt="..." />
+                                <div class="card-body">
+                                    <h5 class="card-title">✍️ Article</h5>
+                                    <div class="para">
+                                        <p class="card-text">What if famous brands had regular fonts? Meet RegulaBrands!
+                                        </p>
+                                        <img src="public/dot-icon.svg" alt="" />
+                                    </div>
+                                    <p class="card-text para-2">I’ve worked in UX for the better part of a decade. From
+                                        now
+                                        on, I plan to rei…</p>
+                                    <div class="profile-details">
+                                        <div class="profile-image">
+                                            <img src="public/profile-image1.png" alt="" />
+                                            <div>
+                                                <span>Sarthak Kamra</span>
+                                                <span id="profile-image-views" class=" d-block d-lg-none">1.4k
+                                                    views</span>
+                                            </div>
+                                        </div>
+                                        <div class="profile-views">
+                                            <span class="views d-none d-lg-flex">
+                                                <img src="public/view-icon.svg" alt="" />
+                                                <span>1.4k views</span>
+                                            </span>
+                                            <span class="share-btn">
+                                                <img src="public/share-icon.svg" alt="" />
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card mb-3">
+                        <img src="public/post-image2.png" class="card-img-top" alt="..." />
+                        <div class="card-body">
+                            <h5 class="card-title">🔬️ Education</h5>
+                            <div class="para">
+                                <p class="card-text">Tax Benefits for Investment under National Pension Scheme
+                                    launched by Government</p>
+                                <img src="public/dot-icon.svg" alt="" />
+                            </div>
+                            <p class="card-text para-2">I’ve worked in UX for the better part of a decade. From
+                                now
+                                on, I plan to rei…</p>
+                            <div class="profile-details">
+                                <div class="profile-image">
+                                    <img src="public/profile-image2.png" alt="" />
+                                    <div>
+                                        <span>Sarah West</span>
+                                        <span id="profile-image-views" class=" d-block d-lg-none">1.4k
+                                            views</span>
+                                    </div>
+                                </div>
+                                <div class="profile-views">
+                                    <span class="views d-none d-lg-flex">
+                                        <img src="public/view-icon.svg" alt="" />
+                                        <span>1.4k views</span>
+                                    </span>
+                                    <span class="share-btn">
+                                        <img src="public/share-icon.svg" alt="" />
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card mb-3">
+                        <img src="public/post-image3.png" class="card-img-top" alt="..." />
+                        <div class="card-body">
+                            <h5 class="card-title">🗓️ Meetup</h5>
+                            <div class="para">
+                                <p class="card-text">Finance & Investment Elite Social Mixer @Lujiazui</p>
+                                <img src="public/dot-icon.svg" alt="" />
+                            </div>
+                            <div class="meeting-details">
+                                <div class="meeting-time">
+                                    <img src="public/calender-icon.svg" alt="" />
+                                    <span>Fri, 12 Oct, 2018</span>
+                                </div>
+                                <div class="meeting-location">
+                                    <img src="public/location-icon.svg" alt="" />
+                                    <span>Ahmedabad, India</span>
+                                </div>
+                            </div>
+                            <button>
+                                Visit Website
+                            </button>
+                            <div class="profile-details">
+                                <div class="profile-image">
+                                    <img src="public/profile-image3.png" alt="" />
+                                    <div>
+                                        <span>Ronal Jones</span>
+                                        <span id="profile-image-views" class=" d-block d-lg-none">1.4k
+                                            views</span>
+                                    </div>
+                                </div>
+                                <div class="profile-views">
+                                    <span class="views d-none d-lg-flex">
+                                        <img src="public/view-icon.svg" alt="" />
+                                        <span>1.4k views</span>
+                                    </span>
+                                    <span class="share-btn">
+                                        <img src="public/share-icon.svg" alt="" />
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card mb-3">
+                        <div class="card-body">
+                            <h5 class="card-title">💼️ Job</h5>
+                            <div class="para">
+                                <p class="card-text">Software Developer</p>
+                                <img src="public/dot-icon.svg" alt="" />
+                            </div>
+                            <div class="meeting-details">
+                                <div class="meeting-time">
+                                    <img src="public/meeting-place-icon.svg" alt="" />
+                                    <span>Innovaccer Analytics Private Ltd.</span>
+                                </div>
+                                <div class="meeting-location">
+                                    <img src="public/location-icon.svg" alt="" />
+                                    <span>Noida, India</span>
+                                </div>
+                            </div>
+                            <button class="lastpost-btn">
+                                Apply on Timesjobs
+                            </button>
+                            <div class="profile-details">
+                                <div class="profile-image">
+                                    <img src="public/profile-image4.png" alt="" />
+                                    <div>
+                                        <span>Joseph Gray</span>
+                                        <span id="profile-image-views" class=" d-block d-lg-none">1.4k
+                                            views</span>
+                                    </div>
+                                </div>
+                                <div class="profile-views">
+                                    <span class="views d-none d-lg-flex">
+                                        <img src="public/view-icon.svg" alt="" />
+                                        <span>1.4k views</span>
+                                    </span>
+                                    <span class="share-btn">
+                                        <img src="public/share-icon.svg" alt="" />
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- <Post /> End-->
+                </div>
+                <div class="content-right-container ">
+                    <div class="content-right-container-top d-none d-lg-flex">
+                        <div class="location">
+                            <img src="public/location-icon.svg" alt="" />
+                            <span>Noida, India</span>
+                        </div>
+                        <img src="public/pencil-icon.svg" alt="" />
+                    </div>
+                    <div class="content-right-container-para d-none d-lg-flex">
+                        <img src="public/error-icon.svg" alt="" />
+                        <p>
+                            Your location will help us serve better and extend a personalised experience.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Body Content End-->
+
+    <script type="module" src="./index.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
